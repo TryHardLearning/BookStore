@@ -5,7 +5,7 @@ import jakarta.persistence.*
 
 @Entity
 @Table(name = "books")
-class Book(
+data class Book(
 
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "book_id_seq")
     @Column(name = "id")
